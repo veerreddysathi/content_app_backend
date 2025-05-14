@@ -1,0 +1,10 @@
+{application,sender_service,
+             [{description,"Sender Service for sending content"},
+              {vsn,"0.1.0"},
+              {registered,[sender_service_sup]},
+              {mod,{sender_service_app,[]}},
+              {applications,[kernel,stdlib,cowboy,cowlib,ranch,
+                             shared_storage]},
+              {env,[]},
+              {modules,[sender_api_handler,sender_service_app,
+                        sender_service_sup]}]}.

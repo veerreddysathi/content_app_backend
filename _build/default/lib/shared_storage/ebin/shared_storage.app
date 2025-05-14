@@ -1,0 +1,10 @@
+{application,shared_storage,
+             [{description,"An OTP application"},
+              {vsn,"0.1.0"},
+              {registered,[]},
+              {mod,{shared_storage_app,[]}},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[shared_storage_app,shared_storage_sup]},
+              {licenses,["Apache-2.0"]},
+              {links,[]}]}.

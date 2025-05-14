@@ -1,0 +1,17 @@
+{application, queue_consumer, [
+    {description, "Queue Consumer Application"},
+    {vsn, "0.1.0"},
+    {registered, [queue_consumer_sup]},
+    {mod, {queue_consumer_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        amqp_client,
+        rabbit_common,
+        shared_storage
+    ]},
+    {env, []},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+ ]}.

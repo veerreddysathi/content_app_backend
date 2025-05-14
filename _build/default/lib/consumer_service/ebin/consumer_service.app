@@ -1,0 +1,10 @@
+{application,consumer_service,
+             [{description,"Consumer Service for querying content and payments"},
+              {vsn,"0.1.0"},
+              {registered,[consumer_service_sup]},
+              {mod,{consumer_service_app,[]}},
+              {applications,[kernel,stdlib,cowboy,cowlib,ranch,
+                             shared_storage]},
+              {env,[{db_host,"localhost"}]},
+              {modules,[consumer_api_handler,consumer_service_app,
+                        consumer_service_sup]}]}.
