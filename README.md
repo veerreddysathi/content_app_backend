@@ -7,7 +7,7 @@ This project is a microservices-based Erlang backend infrastructure designed to 
 ## Folder Structure
 
 ```
-company_k/
+content_app_backend/
 ├── apps/
 │   ├── sender_service/         # API for content producers to upload files
 │   ├── consumer_service/       # API for users to retrieve files and trigger payments
